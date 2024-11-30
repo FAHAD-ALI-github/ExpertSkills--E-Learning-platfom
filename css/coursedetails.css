@@ -1,0 +1,133 @@
+body {
+    color: #545454;
+}
+
+#course-details {
+    padding: 8vw 8vw 0 8vw;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0;
+
+}
+
+.course-header .course-info {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.course-header .course-info h1 {
+    color: #424067;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.course-header .course-info .star {
+    color: #fdc93b;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.course-header .course-image {
+    flex: 1;
+}
+
+.course-header .course-image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.course-details-section {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.course-details-content {
+    flex: 2;
+    padding-right: 50px;
+}
+
+.course-sidebar {
+    flex: 1;
+    background-color: #f9f9ff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.course-details-content h2,
+.course-sidebar h3 {
+    color: #424067;
+    margin-bottom: 20px;
+}
+
+.course-details-content p,
+.course-sidebar p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.course-sidebar .price {
+    font-size: 2rem;
+    color: #424067;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.course-sidebar .enroll-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #424067;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.course-sidebar .enroll-btn:hover {
+    background-color: #a138ef;
+}
+
+.curriculum-list {
+    list-style-type: none;
+}
+
+.curriculum-list li {
+    background-color: #f9f9ff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.curriculum-list li i {
+    margin-right: 15px;
+    color: #424067;
+}
+
+@media (max-width: 769px) {
+    .course-header,
+    .course-details-section {
+        flex-direction: column;
+    }
+
+    .course-header .course-info,
+    .course-details-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .course-header h1 {
+        font-size: 2rem;
+    }
+    nav .navigation ul.active {
+        right: 0px;
+      }
+}

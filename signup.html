@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eLearning</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="person"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">
+        <img src="Images/logo.png" alt="Website logo" />
+        <span class="company-name">ExpertSkills</span>
+      </div>
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fa-sharp fa-regular fa-circle-xmark"></i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="./all_courses.html">All Courses</a></li>
+          <li><a href="#community">Our Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <a href="./login.html"><img id="profile-btn" src="Images/profile.png" alt="profile" /></a>
+        <img
+          id="menu-btn"
+          src="Images/menuicon.png"
+          alt="menu button"
+        />
+      </div>
+    </nav>
+    <section id="signup">
+        <div class="signup-container">
+            <h2>Create Account</h2>
+            <form>
+                <div class="name-fields">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                
+                <button type="submit" class="signup-btn">SIGN UP</button>
+                
+                <div class="login-link">
+                    Already have an account? <a href="./login.html">Log In</a>
+                </div>
+            </form>
+        </div>
+    </section>
+   <!-- Footer -->
+   <footer>
+    <div class="footer-col">
+      <h3>ExpertSkills</h3>
+      <li><a href="#">Home</a></li>
+      <li><a href="#features">About us</a></li>
+      <li><a href="#course">Courses</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </div>
+
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <li><a href="#course">Web Development</a></li>
+      <li><a href="#course">App Development</a></li>
+      <li><a href="#course">Data Science</a></li>
+      <li><a href="#course">Clound Computing</a></li>
+    </div>
+
+    <div class="footer-col">
+      <h3>Follow us</h3>
+      <li>Instagram</li>
+      <li>Facebook</li>
+      <li>Linkedin</li>
+      <li>Github</li>
+    </div>
+
+    <div class="footer-col">
+      <h3>News Letter</h3>
+      <p>
+        Stay ahead in learning—subscribe now for updates and exclusive content!
+      </p>
+      <div class="subscribe">
+        <input type="text" placeholder="Your Email Address" />
+        <a class="white" href="#">SUBSCRIBE</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright ©2024 All rights reserved by ExpertSkills.com</p>
+      <div class="social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $("#menu-btn").click(function () {
+      $("nav .navigation ul").addClass("active");
+    });
+    $("#menu-close").click(function () {
+      $("nav .navigation ul").removeClass("active");
+    });
+  </script>
+</body>
+</html>

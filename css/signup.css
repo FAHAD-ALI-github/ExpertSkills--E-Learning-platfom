@@ -1,0 +1,118 @@
+#signup {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+        url("../Images/home_background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    
+}
+
+.signup-container {
+    background-color: #fff;
+    width: 450px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.signup-container h2 {
+    color: #424067;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #545454;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.signup-container .name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-container .name-fields input {
+    width: 48%;
+}
+
+
+.signup-container .terms {
+    text-align: left;
+    margin: 15px 0;
+    font-size: 0.9rem;
+    color: #545454;
+    display: flex;
+    
+}
+
+.signup-container .terms input{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.signup-container .terms a {
+    color: #a138ef;
+    text-decoration: none;
+}
+
+.signup-container .signup-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #424067;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.signup-container .signup-btn:hover {
+    background-color: #a138ef;
+}
+
+.signup-container .login-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.signup-container .login-link a {
+    color: #a138ef;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 475px) {
+    .signup-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .signup-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .signup-container .name-fields {
+        flex-direction: column;
+    }
+
+    .signup-container .name-fields input {
+        width: 100%;
+    }
+}
