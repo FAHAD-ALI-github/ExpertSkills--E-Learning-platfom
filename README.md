@@ -65,7 +65,7 @@ ExpertSkills--E-Learning-platform/
 
 ## 🌐 Live Demo
 
-[🔗 GitHub Pages Live Site](https://fahad-ali-github.github.io/ExpertSkills--E-Learning-platform/)
+[🔗 GitHub Pages Live Site](https://fahad-ali-github.github.io/ExpertSkills--E-Learning-platfom/)
 
 ---
 
